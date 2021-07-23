@@ -1,0 +1,21 @@
+package br.com.estudo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import br.com.estudo.service.CrudCargoService;
+
+@SpringBootApplication
+public class SpringDataApplication {
+	
+	private Boolean system = true;
+
+	private final CrudCargoService cargoService;
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringDataApplication.class, args);
+	}
+	
+
+
+}
